@@ -1,0 +1,24 @@
+@font-face{
+    font-family: "Inknut";
+    src: url("./fonts/InknutAntiqua-Regular.ttf") format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Inknut-Light";
+    src: url("./fonts/InknutAntiqua-Light.ttf") format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Inknut-Bold";
+    src: url("./fonts/InknutAntiqua-Bold.ttf") format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Gabarito";
+    src: url("./fonts/Gabarito-VariableFont_wght.ttf") format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
