@@ -49,10 +49,18 @@ h1{
 p{
     font-family:"Ysabeau";
     font-size: 1.1rem;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
 }
 
 #og-author{
     font-size: 1.3rem;
     text-align:center;
+    margin-block:1rem;
+    font-weight: 500;
+    padding:1rem;
+    border:1px solid #1C4964
+}
+.pg{
+    margin-block:1rem;
+
 }
