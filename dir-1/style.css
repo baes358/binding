@@ -1,3 +1,58 @@
+@font-face{
+    font-family: "Bellefair";
+    src: url("./fonts/Bellefair-Regular.ttf") format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Ysabeau";
+    src: url("./fonts/Ysabeau-VariableFont_wght.ttf") format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face{
+    font-family: "YsabeauItalic";
+    src: url("./fonts/Ysabeau-Italic-VariableFont_wght.ttf") format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
 :root{
+    --mid-blue:#60A7D2;
+    --light-blue:#CAE8FF;
+    --light-teal:#BEE8E8;
+    --mid-teal:#61B6CB;
+    --dark-blue:#1C4964;
+}
 
+html{
+    background-color: var(--light-blue);
+}
+
+
+body{
+    margin:1rem;
+}
+
+header{
+    
+
+}
+
+
+h1{
+    font-family:"Bellefair";
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--dark-blue);
+}
+p{
+    font-family:"Ysabeau";
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+#og-author{
+    font-size: 1.3rem;
+    text-align:center;
 }

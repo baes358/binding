@@ -10,3 +10,16 @@
     font-weight: 100 900;
     font-style: normal;
 }
+
+
+h1{
+    font-family:"DellaRespira";
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+p{
+    font-family:"Forum";
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
