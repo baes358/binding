@@ -1,27 +1,19 @@
 @font-face{
-    font-family: "Bellefair";
-    src: url("./fonts/Bellefair-Regular.ttf") format('truetype');
+    font-family: "Josefin";
+    src: url("./fonts/JosefinSans-VariableFont_wght.ttf") format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
-@font-face{
-    font-family: "Ysabeau";
-    src: url("./fonts/Ysabeau-VariableFont_wght.ttf") format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-}
-@font-face{
-    font-family: "YsabeauItalic";
-    src: url("./fonts/Ysabeau-Italic-VariableFont_wght.ttf") format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-}
+
+
 :root{
-    --mid-blue:#60A7D2;
+    
     --light-blue:#CAE8FF;
-    --light-teal:#BEE8E8;
-    --mid-teal:#61B6CB;
+    --light-teal:#c6f0f0;
+    --mid-blue:#68b4e3;
+    --mid-teal:#4ca1b7;
     --dark-blue:#1C4964;
+    --dark-teal:#155157;
 }
 
 html{
@@ -29,38 +21,86 @@ html{
 }
 
 
-body{
-    margin:1rem;
-}
-
 header{
+    background-color: var(--dark-blue);
+    padding:1rem;
+    
     
 
+}
+.og-text{
+    
+}
+main{
+    margin:1rem;
 }
 
 
 h1{
-    font-family:"Bellefair";
-    font-size: 2rem;
-    line-height: 2rem;
-    text-align: center;
-    color: var(--dark-blue);
+    font-family:"Josefin";
+    font-size: 3.5rem;
+    font-weight:500;
+    line-height: 4rem;
+    text-align: left;
+    color: var(--light-blue);
+    margin-block:2rem;
+    margin-inline:1rem;
+    letter-spacing:-2px;
+    padding:1.5rem 1.25rem;
+    border:5px solid var(--light-blue);
+    text-wrap:pretty;
+    width:fit-content;
 }
 p{
-    font-family:"Ysabeau";
-    font-size: 1.1rem;
-    line-height: 1.5rem;
+    font-family:"Josefin";
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    font-weight:350;
 }
 
-#og-author{
+.art-detail{
     font-size: 1.3rem;
-    text-align:center;
+    text-align:left;
     margin-block:1rem;
+    margin-inline:.5rem;
     font-weight: 500;
-    padding:1rem;
-    border:1px solid #1C4964
+    /* border:2px solid var(--mid-blue);
+    background-color: var(--dark-blue); */
+    color: var(--mid-blue);
+
+}
+#og-author{
+    margin-block-end:0;
+    text-align:center;
+}
+#og-date{
+    margin-block-start:0.25rem;
+    margin-block-end:2rem;
+    text-align:center;
+    font-weight:400;
+}
+.context{
+    font-size:1.25rem;
+    line-height:1.5rem;
+    /* color: var(--mid-teal); */
+    font-weight:350;
+    margin-inline:2rem;
+    margin-block:4rem;
+    letter-spacing:-.5px;
+    color:var(--dark-blue);
+    text-align:center;
+
+}
+.context em{
+    font-weight: 600;
+    font-style: italic;
 }
 .pg{
-    margin-block:1rem;
+    margin:2rem;
+
+    padding:2rem;
+    color:var(--light-blue);
+    background-color:var(--dark-blue);
+
 
 }
