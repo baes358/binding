@@ -38,18 +38,19 @@ main{
 
 h1{
     font-family:"Josefin";
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight:500;
     line-height: 4rem;
     text-align: left;
     color: var(--light-blue);
-    margin-block:2rem;
-    margin-inline:1rem;
-    letter-spacing:-2px;
+    margin-block:7rem 3rem;
+    line-height: 2.5rem;
+    margin-inline:1.5rem;
+    letter-spacing:-1px;
     padding:1.5rem 1.25rem;
-    border:5px solid var(--light-blue);
+    border:6px solid var(--light-blue);
     text-wrap:pretty;
-    width:fit-content;
+    /* width:min-content; */
 }
 p{
     font-family:"Josefin";
@@ -57,16 +58,23 @@ p{
     line-height: 1.75rem;
     font-weight:350;
 }
-
+.og-text{
+    line-height:.5rem;
+    padding:1.5rem 1.25rem;
+    /* background: var(--mid-blue); */
+    margin-inline:1.5rem;
+    margin-block-end:3rem;
+    border: 2px solid var(--dark-blue);
+    
+}
 .art-detail{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align:left;
-    margin-block:1rem;
-    margin-inline:.5rem;
+    /* margin-block:1rem;
+    margin-inline:.5rem; */
     font-weight: 500;
-    /* border:2px solid var(--mid-blue);
-    background-color: var(--dark-blue); */
-    color: var(--mid-blue);
+    
+    color: var(--mid-teal);
 
 }
 #og-author{
@@ -75,7 +83,7 @@ p{
 }
 #og-date{
     margin-block-start:0.25rem;
-    margin-block-end:2rem;
+    /* margin-block-end:2rem; */
     text-align:center;
     font-weight:400;
 }
