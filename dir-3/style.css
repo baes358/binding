@@ -1,24 +1,75 @@
 @font-face{
-    font-family: "Inknut";
-    src: url("./fonts/InknutAntiqua-Regular.ttf") format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-}
-@font-face{
-    font-family: "Inknut-Light";
-    src: url("./fonts/InknutAntiqua-Light.ttf") format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-}
-@font-face{
-    font-family: "Inknut-Bold";
-    src: url("./fonts/InknutAntiqua-Bold.ttf") format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-}
-@font-face{
     font-family: "Gabarito";
     src: url("./fonts/Gabarito-VariableFont_wght.ttf") format('truetype');
     font-weight: 100 900;
     font-style: normal;
+}
+
+:root{
+    
+    --light-green:#C8E3C9;
+    --green:#87BBA1;
+    --dark-green:#55818A;
+    --darker-green:#3C6063;
+    --darkest-green:#304446;
+    
+}
+
+html{
+    font-family:"Gabarito";
+    background:var(--light-green)
+}
+header{
+    display:flex;
+    flex-direction: row;
+    margin-inline:1rem;
+    column-gap: .5rem;
+}
+
+h1{
+    color:var(--darkest-green);
+    font-size:2.7rem;
+    font-weight:700;
+    line-height:3rem;
+    margin-block-start:10rem;
+}
+.og-text{
+    margin-block-start:10.25rem;
+}
+.og-text p{
+    color:var(--dark-green);
+    font-size:1.5rem;
+    font-weight:700;
+    line-height:1.7rem;
+    margin-block-end:.3rem;
+    text-align:right
+}
+.line{
+    background:var(--green);
+    margin-block-start:10rem;
+    height:5rem;
+
+}
+#top-line{
+    margin:0;
+}
+.context{
+    color:var(--light-green);
+    background:var(--darkest-green);
+    padding:2rem;
+    margin-block:0;
+}
+.context em{
+    font-style:italic;
+}
+article{
+    /* margin-block-start:10rem; */
+    font-size:1.2rem;
+    line-height:1.75rem;
+    color:var(--darkest-green);
+    margin-block-end:10rem;
+}
+article .pg{
+    margin-block:3rem 2rem;
+    margin-inline:1rem;
 }
