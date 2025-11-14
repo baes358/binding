@@ -1,0 +1,39 @@
+@font-face{
+    font-family: "Gabarito";
+    src: url("./home-fonts/Gabarito-VariableFont_wght.ttf") format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+html{
+    background:#ebedff;
+}
+
+header{
+    font-family:"Gabarito";
+    text-align:center;
+}
+h1{
+    font-size:3.5rem;
+    margin-block:2rem;
+    color:rgb(217, 140, 191);
+    letter-spacing:.2ch;
+    font-weight:500;
+}
+h2{
+    font-size:2rem;
+    margin-block:2rem;
+    color:rgb(209, 178, 199);
+    letter-spacing:.2ch;
+    font-weight:500;
+}
+ul li{
+    font-size:1.5rem;
+    margin-block:1rem;
+    color:rgb(148, 77, 114);
+    letter-spacing:.5ch;
+    font-weight:700;
+}
+ul li:hover{
+    color:rgb(212, 83, 149);
+    text-decoration:underline;
+}
