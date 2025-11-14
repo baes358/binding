@@ -20,6 +20,12 @@ html{
     background:var(--light-green)
 }
 header{
+    /* display:flex;
+    flex-direction: row;
+    margin-inline:1rem;
+    column-gap: .5rem; */
+}
+.title-sec{
     display:flex;
     flex-direction: row;
     margin-inline:1rem;
@@ -31,10 +37,30 @@ h1{
     font-size:2.7rem;
     font-weight:700;
     line-height:3rem;
-    margin-block-start:10rem;
+    margin-block-start:8rem;
 }
+
+nav{
+    margin-block:auto;
+    justify-content: center;
+    align-content: center;
+    padding-block-start:1.75rem;
+
+}
+nav ul li{
+    text-align: center;
+
+}
+nav a{
+    font-family:"Gabarito";
+    color: var(--dark-green);
+    font-weight:600;
+    
+    
+}
+
 .og-text{
-    margin-block-start:10.25rem;
+    margin-block-start:8.25rem;
 }
 .og-text p{
     color:var(--dark-green);

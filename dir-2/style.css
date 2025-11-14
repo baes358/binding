@@ -39,6 +39,17 @@ h1{
     
     line-height: 2.5rem;
 
+
+}
+nav{
+    text-align:center;
+    margin-block-start:1rem;
+}
+nav a{
+    font-family:"DMSans";
+    color: var(--dark-cherry);
+    font-weight:600;
+    
 }
 .og-text{
     margin-block:4rem;
