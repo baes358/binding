@@ -27,6 +27,16 @@ header{
     
 
 }
+nav{
+    text-align:center;
+    margin-block-start:1rem;
+}
+nav a{
+    font-family:"Josefin";
+    color: var(--dark-taupe);
+    font-weight:600;
+    
+}
 .og-text{
     
 }
