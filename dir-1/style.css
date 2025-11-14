@@ -115,9 +115,9 @@ p{
     font-style: italic;
 }
 .pg{
-    margin:2rem;
+    margin:2rem .5rem;
 
-    padding:2rem;
+    padding:1.5rem 1rem;
     color:var(--sand);
     background-color:var(--dark-taupe);
 
