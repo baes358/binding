@@ -36,4 +36,5 @@ ul li{
 ul li:hover{
     color:rgb(212, 83, 149);
     text-decoration:underline;
+    text-underline-offset: .5rem;
 }
