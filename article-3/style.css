@@ -121,3 +121,14 @@ article .pg{
     margin-block:3rem 2rem;
     margin-inline:1rem;
 }
+
+blockquote{
+    color:var(--darker-green);
+    font-weight:400;
+    font-size:1.5rem;
+    margin-block:3rem;
+
+    padding: 2rem 1.25rem;
+    background:var(--light-green);
+    line-height:2rem;
+}
