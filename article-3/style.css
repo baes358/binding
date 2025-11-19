@@ -89,7 +89,7 @@ h1{
 }
 .line{
     background:var(--green);
-    margin-block-start:10rem;
+    margin-block-start:8rem;
     height:5rem;
 
 }

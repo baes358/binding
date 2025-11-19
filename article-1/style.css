@@ -65,13 +65,28 @@ header{
     margin-inline:1rem;
     column-gap: .5rem;
 }
+@media (width > 850px) {
+    .title-sec{
+        display:flex;
+        flex-direction: column;
+        text-align:center;
+    }
+    
+}
 
 h1{
     color:var(--dark-green);
     font-size:2.7rem;
-    font-weight:700;
+    font-weight:400;
     line-height:3rem;
     margin-block-start:8rem;
+}
+@media (width > 850px) {
+	h1 {
+		font-size: 3rem;
+		line-height: 3.75rem;
+        margin-inline: 2rem;
+	}
 }
 
 
@@ -79,17 +94,27 @@ h1{
 .og-text{
     margin-block-start:8.25rem;
 }
+
 .og-text p{
     color:var(--darker-green);
     font-size:1.5rem;
-    font-weight:700;
+    font-weight:500;
     line-height:1.7rem;
     margin-block-end:.3rem;
-    text-align:right
+    text-align:right;
+}
+@media (width > 850px) {
+    .og-text{
+        margin-block-start:4rem;
+    }
+    .og-text p{
+
+        text-align:center;
+    }
 }
 .line{
     background:var(--green);
-    margin-block-start:10rem;
+    margin-block-start:8rem;
     height:5rem;
 
 }
@@ -106,6 +131,9 @@ h1{
     background:var(--darker-green);
     padding:2rem;
     margin-block:0;
+    font-weight: 300;
+    text-align:center;
+    font-size:1.5rem;
 }
 .context em{
     font-style:italic;
@@ -120,6 +148,29 @@ article{
 article .pg{
     margin-block:3rem 2rem;
     margin-inline:1rem;
+}
+.label {
+    display:none;
+}
+@media (width > 850px) {
+    .label{
+        display:block;
+        margin-block:5rem 2rem;
+        /* background:var(--dark-green); */
+        /* padding:3rem 2rem; */
+    /* margin-inline:1rem; */
+        font-size: 5rem;
+        font-weight:100;
+        color:var(--green);
+        text-align:center;
+        /* border-radius:100px;
+        width:min-content;
+        height:min-content; */
+    }
+	.para {
+		display: grid;
+        grid-template-columns:1fr 5fr;
+	}
 }
 blockquote{
     color:var(--darker-green);

@@ -89,7 +89,7 @@ h1{
 }
 .line{
     background:var(--green);
-    margin-block-start:10rem;
+    margin-block-start:8rem;
     height:5rem;
 
 }
@@ -128,4 +128,5 @@ blockquote{
     padding: 2rem 1.25rem;
     background:var(--light-green);
     line-height:2rem;
+    margin-block:3rem;
 }

@@ -38,13 +38,16 @@ h1{
 h2{
     font-size:2rem;
     margin-block:2rem;
-    color:var(--dark-green);
+    color:var(--darker-green);
     letter-spacing:.2ch;
-    font-weight:600;
+    font-weight:400;
+}
+nav{
+    margin-block:0rem;
 }
 ul li{
     font-size:1.5rem;
-    margin-block:1rem;
+    /* margin-block:1rem; */
     color:var(--off-white);
     letter-spacing:.25ch;
     font-weight:500;
@@ -53,7 +56,8 @@ ul li{
     /* border:px solid var(--off-white); */
 }
 ul li:hover{
-    color:var(--green);
-    text-decoration:underline;
+    color:var(--darker-green);
+    /* text-decoration:underline; */
     text-underline-offset: .25rem;
+    background:var(--off-white);
 }
