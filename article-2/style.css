@@ -25,6 +25,29 @@ html{
     font-family:"MonaSans";
     background:var(--light-green)
 }
+nav{
+    margin-block:auto;
+    justify-content: center;
+    align-content: center;
+    padding-block-start:1.75rem;
+
+}
+nav ul{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+nav ul li{
+    text-align: center;
+
+}
+nav a{
+    font-family:"MonaSans";
+    color: var(--dark-green);
+    font-weight:600;
+    
+    
+}
 header{
     /* display:flex;
     flex-direction: row;
@@ -46,24 +69,7 @@ h1{
     margin-block-start:8rem;
 }
 
-nav{
-    margin-block:auto;
-    justify-content: center;
-    align-content: center;
-    padding-block-start:1.75rem;
 
-}
-nav ul li{
-    text-align: center;
-
-}
-nav a{
-    font-family:"MonaSans";
-    color: var(--dark-green);
-    font-weight:600;
-    
-    
-}
 
 .og-text{
     margin-block-start:8.25rem;

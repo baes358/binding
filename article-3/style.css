@@ -12,18 +12,46 @@
 }
 
 :root{
-    
-    --light-green:#C8E3C9;
+    --off-white:#eef1eb;
+    --light-green:#c6e3c7;
     --green:#87BBA1;
-    --dark-green:#55818A;
-    --darker-green:#3C6063;
-    --darkest-green:#304446;
+    --dark-green:#47928b;
+    --darker-green:#1c6364;
+    --darkest-green:#162E30;
     
 }
 
 html{
     font-family:"MonaSans";
-    background:var(--light-green)
+    background:var(--off-white);
+}
+nav{
+    margin-block:auto;
+    justify-content: center;
+    align-content: center;
+    padding-block-start:2.75rem;
+
+}
+nav ul{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+nav ul li{
+    text-align: center;
+
+}
+
+nav a{
+    font-family:"MonaSans";
+    color: var(--off-white);
+    font-weight:500;
+    
+    
+}
+nav a:hover{
+    color: var(--green);
 }
 header{
     /* display:flex;
@@ -39,37 +67,20 @@ header{
 }
 
 h1{
-    color:var(--darkest-green);
+    color:var(--dark-green);
     font-size:2.7rem;
     font-weight:700;
     line-height:3rem;
     margin-block-start:8rem;
 }
 
-nav{
-    margin-block:auto;
-    justify-content: center;
-    align-content: center;
-    padding-block-start:1.75rem;
 
-}
-nav ul li{
-    text-align: center;
-
-}
-nav a{
-    font-family:"MonaSans";
-    color: var(--dark-green);
-    font-weight:600;
-    
-    
-}
 
 .og-text{
     margin-block-start:8.25rem;
 }
 .og-text p{
-    color:var(--dark-green);
+    color:var(--darker-green);
     font-size:1.5rem;
     font-weight:700;
     line-height:1.7rem;
@@ -82,12 +93,17 @@ nav a{
     height:5rem;
 
 }
+.dark-line{
+    background:var(--darker-green);
+    margin-block-start:0;
+    height:7rem;
+}
 #top-line{
     margin:0;
 }
 .context{
-    color:var(--light-green);
-    background:var(--darkest-green);
+    color:var(--off-white);
+    background:var(--darker-green);
     padding:2rem;
     margin-block:0;
 }
