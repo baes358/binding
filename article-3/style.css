@@ -1,12 +1,12 @@
 @font-face{
-    font-family: "Gabarito";
-    src: url("./fonts/Gabarito-VariableFont_wght.ttf") format('truetype');
+    font-family: "InSans";
+    src: url("./fonts/InstrumentSans-VariableFont_wdth,wght.ttf") format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
 @font-face{
-    font-family: "MonaSans";
-    src: url("./fonts/MonaSans-VariableFont_wdth,wght.ttf") format('truetype');
+    font-family: "InSerif";
+    src: url("./fonts/InstrumentSerif-Regular.ttf") format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
@@ -22,7 +22,7 @@
 }
 
 html{
-    font-family:"MonaSans";
+    font-family:"InSans";
     background:var(--off-white);
 }
 nav{
@@ -44,10 +44,10 @@ nav ul li{
 }
 
 nav a{
-    font-family:"MonaSans";
+    font-family:"InSans";
     color: var(--off-white);
     font-weight:500;
-    
+    font-size:1rem;
     
 }
 nav a:hover{
@@ -60,37 +60,72 @@ header{
     column-gap: .5rem; */
 }
 .title-sec{
-    display:flex;
-    flex-direction: row;
+    /* display:flex;
+    flex-direction: row; */
     margin-inline:1rem;
-    column-gap: .5rem;
+    column-gap: 1rem;
+}
+@media (width > 850px) {
+    .title-sec{
+        display:flex;
+        flex-direction: column;
+        text-align:center;
+    }
+    
 }
 
 h1{
     color:var(--dark-green);
-    font-size:2.7rem;
-    font-weight:700;
-    line-height:3rem;
-    margin-block-start:8rem;
+    font-size:4rem;
+    /* font-weight:800; */
+    line-height:4rem;
+    margin-block-start:5rem;
+    font-family: "InSerif";
+}
+@media (width > 850px) {
+	h1 {
+		font-size: 5rem;
+		line-height: 5rem;
+        margin-inline: 2rem;
+	}
+}
+h1 span{
+    color:var(--darkest-green);
+    font-size:5rem;
+    @media (width > 850px) {
+    font-size:6rem;
+    }
 }
 
 
 
 .og-text{
-    margin-block-start:8.25rem;
+    margin-block-start:4rem;
+    /* margin-inline-end:1rem; */
 }
+
 .og-text p{
     color:var(--darker-green);
-    font-size:1.5rem;
-    font-weight:700;
-    line-height:1.7rem;
+    font-size:2rem;
+    font-weight:400;
+    letter-spacing:-.05ch;
+    line-height:2.2rem;
     margin-block-end:.3rem;
-    text-align:right
+    text-align:right;
+}
+@media (width > 850px) {
+    .og-text{
+        margin-block-start:4rem;
+    }
+    .og-text p{
+
+        text-align:center;
+    }
 }
 .line{
     background:var(--green);
-    margin-block-start:8rem;
-    height:5rem;
+    margin-block-start:5rem;
+    height:4rem;
 
 }
 .dark-line{
@@ -106,6 +141,9 @@ h1{
     background:var(--darker-green);
     padding:2rem;
     margin-block:0;
+    font-weight: 300;
+    text-align:center;
+    font-size:1.5rem;
 }
 .context em{
     font-style:italic;
@@ -116,19 +154,70 @@ article{
     line-height:1.75rem;
     color:var(--darkest-green);
     margin-block-end:10rem;
+    
 }
 article .pg{
     margin-block:3rem 2rem;
     margin-inline:1rem;
+    
 }
-
+.para{
+    margin-block-start:7rem;
+}
+.label {
+    /* display:none; */
+    text-align:right;
+    margin-block: 3rem 1rem;
+    margin-inline-end:1rem;
+    font-size: 5rem;
+    font-weight:100;
+    color:var(--green);
+    
+}
+@media (width > 850px) {
+    .label{
+        display:block;
+        margin-block:4rem 2rem;
+        /* background:var(--dark-green); */
+        /* padding:3rem 2rem; */
+    /* margin-inline:1rem; */
+        font-size: 4.5rem;
+        color:var(--green);
+        text-align:left;
+        margin-inline-start:2rem;
+        /* border-radius:100px;
+        width:min-content;
+        height:min-content; */
+    }
+	.para {
+		display: grid;
+        grid-template-columns:1fr 5fr;
+        margin-inline-end: 2rem;
+	}
+}
+.pg em{
+    font-weight: 500;
+    font-style:italic;
+}
+mark{
+    background: var(--light-green);
+}
 blockquote{
     color:var(--darker-green);
-    font-weight:400;
-    font-size:1.5rem;
-    margin-block:3rem;
-
+    font-weight:300;
+    font-size:2rem;
     padding: 2rem 1.25rem;
     background:var(--light-green);
     line-height:2rem;
+    margin-block:3rem;
+}
+
+
+footer{
+    background:var(--darkest-green);
+    text-align:center;
+    color:var(--green);
+    font-size:1rem;
+    padding-block: 2rem;
+    letter-spacing:.25ch;
 }
