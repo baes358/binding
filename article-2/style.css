@@ -1,12 +1,12 @@
 @font-face{
     font-family: "InSans";
-    src: url("./home-fonts/InstrumentSans-VariableFont_wdth,wght.ttf") format('truetype');
+    src: url("./fonts/InstrumentSans-VariableFont_wdth,wght.ttf") format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
 @font-face{
     font-family: "InSerif";
-    src: url("./home-fonts/InstrumentSerif-Regular.ttf") format('truetype');
+    src: url("./fonts/InstrumentSerif-Regular.ttf") format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
@@ -44,16 +44,22 @@ nav ul li{
     text-align: center;
 
 }
+#active-nav{
+    color: var(--off-white);
+}
+#active-nav:hover{
+    color: var(--green);
+}
 
 nav a{
     font-family:"InSans";
-    color: var(--off-white);
+    color: var(--green);
     font-weight:500;
     font-size:1rem;
     
 }
 nav a:hover{
-    color: var(--green);
+    color: var(--dark-green);
 }
 header{
     /* display:flex;
@@ -161,7 +167,7 @@ article{
 article .pg{
     margin-block:3rem 2rem;
     margin-inline:1rem;
-    
+    text-wrap:pretty;
 }
 .para{
     margin-block-start:7rem;

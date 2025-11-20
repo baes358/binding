@@ -4,8 +4,11 @@
     <head>
         <title>Sophia's Binding</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="reset.css"rel="stylesheet">
-        <link href="style.css"rel="stylesheet">
+        <style>
+            @import 'style.css';
+            @import 'reset.css' layer(reset);
+
+        </style>
     </head>
 
     <body>
@@ -14,7 +17,7 @@
                 <ul>
                     <li><a href="../index.html">H</a></li>
                     <li><a href="../article-1/index.html">I</a></li>
-                    <li><a href="/article-2/index.html">II</a></li>
+                    <li ><a id="active-nav"href="/article-2/index.html">II</a></li>
                     <li><a href="../article-3/index.html">III</a></li>
                 </ul>
             </nav>

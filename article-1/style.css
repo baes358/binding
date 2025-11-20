@@ -42,17 +42,29 @@ nav ul li{
     text-align: center;
 
 }
-
+#active-nav{
+    color: var(--off-white);
+}
+#active-nav:hover{
+    color: var(--green);
+}
 nav a{
     font-family:"InSans";
-    color: var(--off-white);
+    color: var(--green);
     font-weight:500;
     font-size:1rem;
     
 }
 nav a:hover{
-    color: var(--green);
+    color: var(--dark-green);
 }
+
+
+
+
+
+
+
 header{
     /* display:flex;
     flex-direction: row;
@@ -159,10 +171,12 @@ article{
 article .pg{
     margin-block:3rem 2rem;
     margin-inline:1rem;
+    text-wrap:pretty;
     
 }
 .para{
     margin-block-start:7rem;
+    
 }
 .label {
     /* display:none; */
@@ -218,6 +232,6 @@ footer{
     text-align:center;
     color:var(--green);
     font-size:1rem;
-    padding-block: 2rem;
+    padding: 2rem 1rem;
     letter-spacing:.25ch;
 }
