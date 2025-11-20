@@ -44,7 +44,7 @@ nav ul li{
 }
 
 nav a{
-    font-family:"MonaSans";
+    font-family:"InSans";
     color: var(--off-white);
     font-weight:500;
     font-size:1rem;
@@ -76,7 +76,7 @@ header{
 
 h1{
     color:var(--dark-green);
-    font-size:3.5rem;
+    font-size:4rem;
     /* font-weight:800; */
     line-height:4rem;
     margin-block-start:5rem;
@@ -84,14 +84,17 @@ h1{
 }
 @media (width > 850px) {
 	h1 {
-		font-size: 3rem;
-		line-height: 3.75rem;
+		font-size: 5rem;
+		line-height: 5rem;
         margin-inline: 2rem;
 	}
 }
 h1 span{
     color:var(--darkest-green);
     font-size:5rem;
+    @media (width > 850px) {
+    font-size:6rem;
+    }
 }
 
 
@@ -106,7 +109,7 @@ h1 span{
     font-size:2rem;
     font-weight:400;
     letter-spacing:-.05ch;
-    line-height:2rem;
+    line-height:2.2rem;
     margin-block-end:.3rem;
     text-align:right;
 }
@@ -174,14 +177,14 @@ article .pg{
 @media (width > 850px) {
     .label{
         display:block;
-        margin-block:5rem 2rem;
+        margin-block:4rem 2rem;
         /* background:var(--dark-green); */
         /* padding:3rem 2rem; */
     /* margin-inline:1rem; */
-        font-size: 5rem;
-        font-weight:100;
+        font-size: 4.5rem;
         color:var(--green);
-        text-align:center;
+        text-align:left;
+        margin-inline-start:2rem;
         /* border-radius:100px;
         width:min-content;
         height:min-content; */
@@ -189,6 +192,7 @@ article .pg{
 	.para {
 		display: grid;
         grid-template-columns:1fr 5fr;
+        margin-inline-end: 2rem;
 	}
 }
 .pg em{
@@ -215,4 +219,5 @@ footer{
     color:var(--green);
     font-size:1rem;
     padding-block: 2rem;
+    letter-spacing:.25ch;
 }
