@@ -180,6 +180,10 @@ article .pg{
     color:var(--green);
     
 }
+#individual-letter{
+    margin-block: 3rem 1rem;
+}
+
 @media (width > 850px) {
     .label{
         display:block;
@@ -200,6 +204,9 @@ article .pg{
         grid-template-columns:1fr 5fr;
         margin-inline-end: 2rem;
 	}
+    #individual-letter{
+        margin-block-start:3.2rem;
+    }
 }
 .pg em{
     font-weight: 500;
@@ -211,11 +218,16 @@ mark{
 blockquote{
     color:var(--darker-green);
     font-weight:300;
-    font-size:2rem;
+    font-size:1.7rem;
     padding: 2rem 1.25rem;
     background:var(--light-green);
-    line-height:2rem;
+    line-height:2.2rem;
     margin-block:3rem;
+    text-align:center;
+    margin-inline-start:0rem;
+    @media (width > 850px){
+        margin-inline-start:1rem;
+    }
 }
 
 

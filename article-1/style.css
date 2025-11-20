@@ -220,10 +220,14 @@ blockquote{
     color:var(--darker-green);
     font-weight:300;
     font-size:2rem;
+    text-align:center;
     padding: 2rem 1.25rem;
     background:var(--light-green);
     line-height:2rem;
     margin-block:3rem;
+    @media (width > 850px){
+        margin-inline-start:1rem;
+    }
 }
 
 
