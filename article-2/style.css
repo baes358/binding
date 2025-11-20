@@ -1,23 +1,25 @@
 @font-face{
     font-family: "InSans";
-    src: url("./fonts/InstrumentSans-VariableFont_wdth,wght.ttf") format('truetype');
+    src: url("./home-fonts/InstrumentSans-VariableFont_wdth,wght.ttf") format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
 @font-face{
     font-family: "InSerif";
-    src: url("./fonts/InstrumentSerif-Regular.ttf") format('truetype');
+    src: url("./home-fonts/InstrumentSerif-Regular.ttf") format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
 
 :root{
     --off-white:#eef1eb;
-    --light-green:#c6e3c7;
-    --green:#87BBA1;
-    --dark-green:#47928b;
-    --darker-green:#1c6364;
-    --darkest-green:#162E30;
+    --light-green:#D4F6F5;
+    --green:#87AFBB;
+    --dark-green:#3A7485;
+    --darker-green:#0C4655;
+    --darkest-green:#132228;
+
+
     
 }
 

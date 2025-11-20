@@ -1,50 +1,56 @@
 @font-face{
-    font-family: "Gabarito";
-    src: url("./home-fonts/Gabarito-VariableFont_wght.ttf") format('truetype');
+    font-family: "InSans";
+    src: url("./home-fonts/InstrumentSans-VariableFont_wdth,wght.ttf") format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
 @font-face{
-    font-family: "MonaSans";
-    src: url("/home-fonts/MonaSans-VariableFont_wdth,wght.ttf") format('truetype');
+    font-family: "InSerif";
+    src: url("./home-fonts/InstrumentSerif-Regular.ttf") format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
 :root{
-    --off-white:#eef1eb;
-    --light-green:#c6e3c7;
+    --off-white:#F2F4ED;
     --green:#87BBA1;
-    --dark-green:#47928b;
-    --darker-green:#1c6364;
-    --darkest-green:#162E30;
+    --teal: #87AFBB;
+    --blue:#879ABB;
+    --dark:#161328;
+    --light-gray:#B1B1B1;
+    --mid-gray:#909090;
+    --dark-gray:#727272;
+
+
+
     
 }
 html{
-    background:var(--green);
+    background:var(--off-white);
 }
 
 header{
-    font-family:"MonaSans";
+    font-family:"InSans";
     
     text-align:center;
 }
 h1{
-    font-size:3.5rem;
+    font-family:"InSerif";
+    font-size:6rem;
     margin-block:2rem;
-    color:var(--off-white);
-    letter-spacing:.2ch;
-    font-weight:300;
+    color:var(--dark-gray);
 }
 h2{
     font-size:2rem;
     margin-block:2rem;
-    color:var(--darker-green);
-    letter-spacing:.2ch;
+    color:var(--mid-gray);
+    letter-spacing:.25ch;
     font-weight:400;
 }
 nav{
     margin-block:0rem;
 }
+
+
 ul li{
     font-size:1.5rem;
     /* margin-block:1rem; */
@@ -52,12 +58,20 @@ ul li{
     letter-spacing:.25ch;
     font-weight:500;
     padding:1rem;
-    background:var(--darker-green);
     /* border:px solid var(--off-white); */
 }
 ul li:hover{
-    color:var(--darker-green);
+    color:var(--green);
     /* text-decoration:underline; */
     text-underline-offset: .25rem;
-    background:var(--off-white);
+    /* background:var(--off-white); */
+}
+#art1-nav{
+    background:var(--green);
+}
+#art2-nav{
+    background:var(--teal);
+}
+#art3-nav{
+    background:var(--blue);
 }
