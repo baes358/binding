@@ -134,6 +134,7 @@ h1 span{
         text-align:center;
     }
 }
+
 .line{
     background:var(--green);
     margin-block-start:5rem;
