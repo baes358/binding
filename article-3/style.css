@@ -97,9 +97,9 @@ h1{
 }
 h1 span{
     color:var(--darkest-green);
-    font-size:5rem;
+    font-size:4rem;
     @media (width > 850px) {
-    font-size:6rem;
+    font-size:5rem;
     }
 }
 

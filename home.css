@@ -43,14 +43,14 @@ h1{
     font-family:"InSerif";
     font-size:4rem;
     margin-block:2rem;
-    color:var(--dark-gray);
+    color:var(--mid-gray);
     margin-block-start:5rem;
     line-height:4rem;
     margin-inline:1rem;
 }
 h1 span{
     color:var(--darker-gray);
-    font-size:5rem;
+    /* font-size:4rem; */
 }
 @media (width > 850px) {
 	h1 {
@@ -62,13 +62,13 @@ h1 span{
     }
 	
     h1 span{
-        font-size:6rem;
+        font-size:5rem;
     }
 }
 h2{
     font-size:2rem;
     margin-block:2rem .5rem;
-    color:var(--darker-gray);
+    color:var(--dark-gray);
     /* letter-spacing:.25ch; */
     font-weight:400;
 }
@@ -83,22 +83,22 @@ h2{
     text-decoration-thickness: .1rem;
 }
 h3{
-    font-size:1.5rem;
+    font-size:2rem;
     margin-block:0 3rem;
     color:var(--dark-gray);
-    letter-spacing:.2ch;
+    /* letter-spacing:.2ch; */
     font-weight:400;
     margin-block-end:6rem;
 }
 
 nav{
     margin-block:3rem;
-    background: var(--light-gray);
-    padding-block:3rem;
+    /* background: var(--light-gray);
+    padding-block:3rem; */
 }
 nav ul{
-    background: var(--darker-gray);
-    padding-block:4rem;
+    /* background: var(--darker-gray);
+    padding-block:4rem; */
 }
 
 
@@ -165,8 +165,8 @@ main p{
     }
     .intro-text{
         display:grid;
-        grid-template-columns:1fr 1fr 1fr;    
-        column-gap:.5rem;
+        /* grid-template-columns:1fr 1fr 1fr;    
+        column-gap:.5rem; */
         margin-inline: 3rem;
         font-size:1.5rem;
     }
