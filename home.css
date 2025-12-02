@@ -26,15 +26,21 @@
     --dark:#161328;
 
     /* geronimo words */
-    --orange:#df8734;
-    --yellow:#f1dd69;
-    --pink:#ee9cbe;
+    --pistachio:#a6cc90;
+    --rosy:#d5a1ba;
+    --aqua:#4faeab;
+    --periwinkle:#7884d2;
+    --sand:#b87466;
     
 
 }
 html{
     background:var(--off-white);
     font-family:"InSans";
+}
+
+main{
+    margin-block-end:10rem;
 }
 
 header{
@@ -46,12 +52,11 @@ header{
 
 h1{
     font-family:"InSerif";
-    font-size:5rem;
-    margin-block:2rem;
+    font-size:6rem;
+    margin-block:10rem;
     color:var(--mid-gray);
-    margin-block:5rem;
-    line-height:4.5rem;
-    margin-inline:1.5rem;
+    line-height:5.5rem;
+    margin-inline:2rem;
 }
 h1 span{
     color:var(--darker-gray);

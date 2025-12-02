@@ -18,6 +18,20 @@
     --dark-green:#47928b;
     --darker-green:#1c6364;
     --darkest-green:#162E30;
+
+    /* geronimo words */
+    --orange:#df8734;
+    --yellow:#edda6d;
+    --pink:#ee9cbe;
+    --rose: #c1363f;
+    --purple: #9d369d;
+
+    --pistachio:#a6cc90;
+    --rosy:#d5a1ba;
+    --aqua:#4faeab;
+    --periwinkle:#7884d2;
+    --sand:#b87466;
+
     
 }
 
@@ -88,7 +102,7 @@ header{
 
 h1{
     color:var(--dark-green);
-    font-size:4rem;
+    font-size:4.5rem;
     /* font-weight:800; */
     line-height:4rem;
     margin-block-start:5rem;
@@ -103,7 +117,8 @@ h1{
 }
 h1 span{
     color:var(--darkest-green);
-    font-size:4rem;
+    font-size:4.5rem;
+
     @media (width > 850px) {
     font-size:5rem;
     }
@@ -118,10 +133,10 @@ h1 span{
 
 .og-text p{
     color:var(--darker-green);
-    font-size:2rem;
+    font-size:1.5rem;
     font-weight:400;
     letter-spacing:-.05ch;
-    line-height:2.2rem;
+    line-height:1.5rem;
     margin-block-end:.3rem;
     text-align:right;
 }
@@ -211,26 +226,87 @@ article .pg{
 	}
 }
 .pg em{
-    font-weight: 500;
+    /* font-weight: 500; */
     font-style:italic;
 }
 mark{
     background: var(--light-green);
+    color:var(--darker-green);
 }
 blockquote{
-    color:var(--darker-green);
-    font-weight:300;
-    font-size:2rem;
-    text-align:center;
-    padding: 2rem 1.25rem;
-    background:var(--light-green);
-    line-height:2rem;
+    color:var(--off-white);
+    font-family:"InSerif";
+    letter-spacing:.1ch;
+    font-size:1.75rem;
+    padding: 2rem;
+    background:var(--dark-green);
+    line-height:2.2rem;
     margin-block:3rem;
+    text-align:center;
+    margin-inline-start:0rem;
     @media (width > 850px){
         margin-inline-start:1rem;
     }
 }
 
+
+.slant{
+  display: inline-block;
+  font-weight: 300;
+  font-size: 1.3em;
+  color: var(--dark-green);
+  transform: rotate(-1.5deg);
+}
+.slant2{
+  display: inline-block;
+  font-weight: 300;
+  font-size: 1.3em;
+    color: var(--dark-green);
+  transform: rotate(1deg);
+}
+.geronimo{
+    display: inline-block;
+    font-family:"InSerif";
+    font-weight:900;
+    font-size: 1.5rem;
+    color:var(--sand);
+}
+.stroke {
+  color: var(--pistachio);
+  -webkit-text-stroke: .75px #000;
+  font-weight: 600;
+  font-size:1.5rem;
+}
+.shadow {
+  text-shadow: 1.4px 1.4px 0 #8c1d98;
+  font-weight: 500;
+  font-size:1.5rem;
+  color:var(--aqua);
+  letter-spacing:.05ch;
+}
+.space {
+  letter-spacing: 0.09em;
+  font-weight: 500;
+  color: var(--periwinkle);
+  font-style:italic;
+  /* font-family:"InSerif"; */
+}
+.shimmer {
+    font-weight: bold;
+    background: linear-gradient(
+                90deg,
+                #8aae4a 0%,
+                #25d356 25%,
+                #51a9bd 50%,
+                #576dfe 75%,
+                #8e76e4 100%
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 5s linear infinite;
+}
 
 footer{
     background:var(--darkest-green);
