@@ -35,11 +35,13 @@ html{
     font-family:"InSans";
     background:var(--off-white);
 }
+/* nav */
 nav{
-    margin-block:auto;
+    /* padding:2rem; */
     justify-content: center;
     align-content: center;
-    padding-block-start:2.75rem;
+    padding-block:1.75rem;
+    
 
 }
 nav ul{
@@ -54,6 +56,7 @@ nav ul li{
 }
 #active-nav{
     color: var(--off-white);
+    
 }
 #active-nav:hover{
     color: var(--green);
@@ -61,7 +64,7 @@ nav ul li{
 
 nav a{
     font-family:"InSans";
-    color: var(--green);
+    color: var(--darker-green);
     font-weight:500;
     font-size:1rem;
     
@@ -69,6 +72,10 @@ nav a{
 nav a:hover{
     color: var(--dark-green);
 }
+
+
+
+
 header{
     /* display:flex;
     flex-direction: row;
@@ -92,7 +99,7 @@ header{
 
 h1{
     color:var(--dark-green);
-    font-size:4rem;
+    font-size:4.5rem;
     /* font-weight:800; */
     line-height:4rem;
     margin-block-start:5rem;
@@ -107,7 +114,8 @@ h1{
 }
 h1 span{
     color:var(--darkest-green);
-    font-size:4rem;
+    font-size:4.5rem;
+
     @media (width > 850px) {
     font-size:5rem;
     }
@@ -122,10 +130,10 @@ h1 span{
 
 .og-text p{
     color:var(--darker-green);
-    font-size:2rem;
+    font-size:1.5rem;
     font-weight:400;
     letter-spacing:-.05ch;
-    line-height:2.2rem;
+    line-height:1.5rem;
     margin-block-end:.3rem;
     text-align:right;
 }
@@ -141,28 +149,53 @@ h1 span{
 .line{
     background:var(--green);
     margin-block-start:5rem;
-    height:4rem;
+    /* height:rem; */
 
 }
 .dark-line{
     background:var(--darker-green);
     margin-block-start:0;
-    height:7rem;
+    height:7.5rem;
+
+  --s: 120px; /* control the size*/
+  --c1: #3a7485;
+  --c2: #d4f6f5;
+  
+  background:
+    radial-gradient(var(--c2) 15%,
+      #0000 17% 20%,var(--c2) 22% 25%,
+      #0000 27% 30%,var(--c2) 32% 35%,
+      #0000 37% 40%,var(--c2) 42% 45%,
+      #0000 47% 50%,var(--c2) 52% 55%, var(--c1) 57%)
+     calc(var(--s)/2) 0/var(--s) var(--s),
+    repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%)
+     0 0/calc(2*var(--s)) calc(2*var(--s));
 }
+
 #top-line{
     margin:0;
 }
 .context{
-    color:var(--off-white);
-    background:var(--darker-green);
-    padding:2rem;
-    margin-block:0;
-    font-weight: 300;
+     color:var(--off-white);
+    font-family:"InSerif";
+    letter-spacing:.1ch;
+    font-size:1.75rem;
+    padding: 3rem 2rem;
+    background:var(--dark-green);
+    line-height:2.2rem;
+    margin-block:3rem;
     text-align:center;
-    font-size:1.5rem;
+    margin-inline-start:0rem;
+    @media (width > 850px){
+        /* margin-inline-start:1rem; */
+    }
+
 }
 .context em{
     font-style:italic;
+    text-decoration:underline;
+    text-decoration-thickness: .05rem;
+    text-underline-offset: .25rem;
 }
 article{
     /* margin-block-start:10rem; */
@@ -176,6 +209,9 @@ article .pg{
     margin-block:3rem 2rem;
     margin-inline:1rem;
     text-wrap:pretty;
+    @media (width > 850px) {
+        margin-inline-end: 7rem;
+    }
 }
 .para{
     margin-block-start:7rem;
@@ -201,11 +237,12 @@ article .pg{
         font-size: 4.5rem;
         color:var(--green);
         text-align:left;
-        margin-inline-start:2rem;
+        margin-inline-start:4rem;
         /* border-radius:100px;
         width:min-content;
         height:min-content; */
     }
+    
 	.para {
 		display: grid;
         grid-template-columns:1fr 5fr;
@@ -225,14 +262,16 @@ blockquote{
     font-family:"InSerif";
     letter-spacing:.1ch;
     font-size:1.75rem;
-    padding: 2rem;
+    padding: 3rem 2rem;
     background:var(--dark-green);
     line-height:2.2rem;
-    margin-block:3rem;
+    margin-block:5rem;
     text-align:center;
     margin-inline-start:0rem;
     @media (width > 850px){
         margin-inline-start:1rem;
+                margin-inline-end:7rem;
+
     }
 }
 
@@ -248,7 +287,7 @@ blockquote{
   font-weight: 300;
   font-size: 1.3em;
     color: var(--dark-green);
-  transform: rotate(1deg);
+  transform: rotate(1.25deg);
 }
 .geronimo{
     display: inline-block;
@@ -306,11 +345,17 @@ blockquote{
 
 
 
-footer{
+footer {
     background:var(--darkest-green);
     text-align:center;
     color:var(--green);
     font-size:1rem;
     padding-block: 2rem;
-    letter-spacing:.25ch;
+    /* letter-spacing:.25ch; */
+}
+footer nav a{
+    color:var(--light-green);
+}
+footer nav a:hover{
+    color:var(--dark-green);
 }

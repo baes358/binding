@@ -194,7 +194,7 @@ main p{
 
     font-size:1rem;
     line-height:1.5rem;
-    color:var(--dark-gray);
+    color:var(--darker-gray);
     font-weight:400;
     text-wrap:pretty;
     
@@ -218,36 +218,59 @@ main p{
   display: inline-block;
   font-weight: 300;
   font-size: 1.3em;
-  /* color: var(--orange); */
+  color: var(--dark-green);
   transform: rotate(-1.5deg);
 }
 .slant2{
   display: inline-block;
   font-weight: 300;
   font-size: 1.3em;
-  /* color: var(--orange); */
-  transform: rotate(1deg);
+    color: var(--dark-green);
+  transform: rotate(1.25deg);
 }
 .geronimo{
     display: inline-block;
     font-family:"InSerif";
     font-weight:900;
-    font-size: 1.25rem;
-    color:var(--orange);
+    font-size: 1.3rem;
+    color:var(--sand);
 }
 .stroke {
-  color: var(--yellow);
-  -webkit-text-stroke: .5px #000;
-  font-weight: 500;
+  color: var(--pistachio);
+  -webkit-text-stroke: .75px #000;
+  font-weight: 600;
+  font-size:2.2rem;
 }
 .shadow {
-  text-shadow: 2.2px 2.2px 0 #9c4f7b;
+  text-shadow: 1.4px 1.4px 0 #8c1d98;
   font-weight: 500;
-  font-size:2.1rem;
-  color:var(--pink);
-  letter-spacing:.07ch;
+  font-size:2.2rem;
+  color:var(--aqua);
+  letter-spacing:.05ch;
 }
-
+.space {
+  letter-spacing: 0.09em;
+  font-weight: 500;
+  color: var(--periwinkle);
+  font-style:italic;
+  /* font-family:"InSerif"; */
+}
+.shimmer {
+    font-weight: bold;
+    background: linear-gradient(
+                90deg,
+                #8aae4a 0%,
+                #25d356 25%,
+                #51a9bd 50%,
+                #576dfe 75%,
+                #8e76e4 100%
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 5s linear infinite;
+}
 
 
 
@@ -264,7 +287,23 @@ main p{
 .dark-line{
     background:var(--darker-gray);
     margin-block-start:0;
-    height:5rem;
+    height:7.5rem;
+
+    
+  --s: 120px; /* control the size*/
+  --c1: #c4c4c4;
+  --c2: #727272;
+  
+  --_g:radial-gradient(#0000 60%,var(--c1) 61% 63%,#0000 64% 77%,var(--c1) 78% 80%,#0000 81%);
+  --_c:,#0000 75%,var(--c2) 0;
+  background:
+    conic-gradient(at 12% 20% var(--_c)) calc(var(--s)* .44) calc(.9*var(--s)),
+    conic-gradient(at 12% 20% var(--_c)) calc(var(--s)*-.06) calc(.4*var(--s)),
+    conic-gradient(at 20% 12% var(--_c)) calc(.9*var(--s)) calc(var(--s)* .44),
+    conic-gradient(at 20% 12% var(--_c)) calc(.4*var(--s)) calc(var(--s)*-.06),
+    var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2) var(--c2);
+  background-size: var(--s) var(--s);
+
 }
 #top-line{
     margin:0;
