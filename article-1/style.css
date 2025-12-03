@@ -60,7 +60,7 @@ nav ul li{
     
 }
 #active-nav:hover{
-    color: var(--green);
+    color: var(--dark-green);
 }
 
 nav a{
