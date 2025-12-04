@@ -80,12 +80,7 @@ nav a:hover{
 
 
 
-header{
-    /* display:flex;
-    flex-direction: row;
-    margin-inline:1rem;
-    column-gap: .5rem; */
-}
+
 .title-sec{
     /* display:flex;
     flex-direction: row; */
@@ -106,7 +101,7 @@ h1{
     font-size:4.5rem;
     /* font-weight:800; */
     line-height:4rem;
-    margin-block-start:5rem;
+    margin-block:8rem;
     font-family: "InSerif";
 }
 @media (width > 850px) {
@@ -124,6 +119,7 @@ h1 span{
     font-size:5rem;
     }
 }
+
 
 
 
