@@ -47,9 +47,7 @@
     conic-gradient(var(--c2) 25%,var(--c3) 0 50%,var(--c4) 0 75%,var(--c5) 0);
     
 }
-html {
-  
-}
+
 html{
     font-family:"InSans";
     background:var(--off-white);
@@ -370,7 +368,7 @@ mark{
     right:0;
     justify-self: right;
     margin-block: 1.5rem .75rem;
-    margin-inline-end:0.5rem;
+    margin-inline:auto 0.5rem;    
     font-size: 3rem;
     font-weight:100;
     color:var(--green);
@@ -381,14 +379,14 @@ mark{
     @media (500px <= width <= 850px){
         font-size: 4rem;
         text-align:right;
-        margin-inline-start:5rem;
+        margin-inline-start:auto;
 
     }
     @media (width > 850px) {
         font-size: 5rem;
         text-align:right;
         margin-block:1rem 1rem;
-        margin-inline-start:5rem;
+        margin-inline-start:auto;
     }
     
 }
