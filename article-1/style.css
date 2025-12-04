@@ -28,6 +28,23 @@
     --periwinkle:#7884d2;
     --sand:#b87466;
 
+
+    /* line css pattern */
+    --s: 4rem; /* control the size*/
+    --c1: #47928b;
+    --c2: #c6e3c7;
+    /* pattern grabbed from https://css-pattern.com/ */
+    --circ-pattern: radial-gradient(36% 72% at 25% -50%,var(--c2) 98%,#0000)
+     0 0/calc(2*var(--s)) var(--s),
+    radial-gradient(36% 72% at 75% 150%,var(--c2) 98%,#0000)
+     0 0/calc(2*var(--s)) var(--s),
+    radial-gradient(72% 36% at 150% 25%,var(--c2) 98%,#0000)
+     0 0/var(--s) calc(2*var(--s)),
+    radial-gradient(72% 36% at -50% 75%,var(--c2) 98%,#0000)
+     0 0/var(--s) calc(2*var(--s)),
+    repeating-conic-gradient(var(--c2) 0 45deg,var(--c1) 0 25%)
+     0 0/calc(2*var(--s)) calc(2*var(--s));
+
     
 }
 
@@ -36,9 +53,10 @@ html{
     background:var(--off-white);
 }
 
-/* nav */
+
+
+/* nav formatting + responsiveness */
 nav{
-    /* padding:2rem; */
     justify-content: center;
     align-content: center;
     padding-block:1.75rem;
@@ -67,7 +85,15 @@ nav a{
     font-family:"InSans";
     color: var(--darker-green);
     font-weight:500;
-    font-size:1rem;
+    font-size:.9rem;
+
+    @media (500px <= width <= 850px){
+        font-size:1rem;
+
+    }
+    @media (width > 850px){
+        font-size:1.2rem;
+    }
     
 }
 nav a:hover{
@@ -80,117 +106,144 @@ nav a:hover{
 
 
 
-
+/* section within header */
 .title-sec{
-    /* display:flex;
-    flex-direction: row; */
-    margin-inline:1rem;
-    column-gap: 1rem;
-}
-@media (width > 850px) {
-    .title-sec{
+    margin-inline:1.2rem;
+
+    @media (500px <= width <= 850px) {
+
+    }
+    @media (width > 850px) {
         display:flex;
         flex-direction: column;
         text-align:center;
     }
-    
 }
 
+/* title formatting */
 h1{
     color:var(--dark-green);
-    font-size:4.5rem;
-    /* font-weight:800; */
-    line-height:4rem;
+    font-size:3.5rem;
+    line-height:3.3rem;
     margin-block:8rem;
     font-family: "InSerif";
-}
-@media (width > 850px) {
-	h1 {
-		font-size: 5rem;
+    width:25rem;
+    
+
+    @media (500px <= width <= 850px) {
+        font-size:5rem;
+        line-height:4.5rem;
+        width:30rem;
+    }
+    @media (width > 850px) {
+        font-size: 5.5rem;
 		line-height: 5rem;
-        margin-inline: 2rem;
-	}
+        margin-inline: auto;
+        width:55rem;
+    }
 }
+
 h1 span{
     color:var(--darkest-green);
-    font-size:4.5rem;
+    font-size:3.5rem;
+
+
+    @media (500px <= width <= 850px) {
+        font-size:5rem;
+        line-height:4.5rem;
+        width:30rem;
+        
+    }
+    @media (width > 850px) {
+        font-size: 5.5rem;
+		line-height: 5rem;
+        margin-inline: auto;
+        width:55rem;
+    }
+}
+
+
+
+
+
+
+/* author + date in header */
+.og-text{
+    margin-block-start:2rem;
 
     @media (width > 850px) {
-    font-size:5rem;
-    }
-}
-
-
-
-
-.og-text{
-    margin-block-start:4rem;
-    /* margin-inline-end:1rem; */
-}
-
-.og-text p{
-    color:var(--darker-green);
-    font-size:1.5rem;
-    font-weight:400;
-    letter-spacing:-.05ch;
-    line-height:1.5rem;
-    margin-block-end:.3rem;
-    text-align:right;
-}
-@media (width > 850px) {
-    .og-text{
-        margin-block-start:4rem;
-    }
-    .og-text p{
-
         text-align:center;
     }
 }
 
+.og-text p{
+    color:var(--darker-green);
+    font-size:1.25rem;
+    font-weight:450;
+    line-height:1.25rem;
+    margin-block-end:.3rem;
+    text-align:right;
+
+    @media (500px <= width <= 850px){
+        font-size:1.5rem;
+        line-height:1.5rem;
+
+    }
+    @media (width > 850px) {
+        text-align:center;
+        font-size:2rem;
+        line-height:2rem;
+
+    }
+
+}
+
+
+/* color line formatting */
 .line{
     background:var(--green);
     margin-block-start:5rem;
-    /* height:rem; */
-
-}
-.dark-line{
-    /* background:var(--darker-green);
-    margin-block-start:0; */
-    height:7.5rem;
-
-  --s: 4rem; /* control the size*/
-  --c1: #47928b;
-  --c2: #c6e3c7;
-  
-  background:
-    radial-gradient(36% 72% at 25% -50%,var(--c2) 98%,#0000)
-     0 0/calc(2*var(--s)) var(--s),
-    radial-gradient(36% 72% at 75% 150%,var(--c2) 98%,#0000)
-     0 0/calc(2*var(--s)) var(--s),
-    radial-gradient(72% 36% at 150% 25%,var(--c2) 98%,#0000)
-     0 0/var(--s) calc(2*var(--s)),
-    radial-gradient(72% 36% at -50% 75%,var(--c2) 98%,#0000)
-     0 0/var(--s) calc(2*var(--s)),
-    repeating-conic-gradient(var(--c2) 0 45deg,var(--c1) 0 25%)
-     0 0/calc(2*var(--s)) calc(2*var(--s));
-
 }
 #top-line{
     margin:0;
 }
+
+/* pattern grabbed from https://css-pattern.com/ */
+.dark-line{
+    height:7.5rem;
+    background: var(--circ-pattern);
+
+}
+
+
+
+
+/* first quote - context of article */
 .context{
-     color:var(--off-white);
+    color:var(--off-white);
     font-family:"InSerif";
     letter-spacing:.1ch;
-    font-size:1.75rem;
+    font-size:1.5rem;
     padding: 3rem 2rem;
     background:var(--dark-green);
-    line-height:2.2rem;
+    line-height:1.75rem;
     margin-block:3rem;
     text-align:center;
     margin-inline-start:0rem;
+    text-wrap:balance;
+
+    @media (500px <= width <= 850px){
+        padding-inline: 5rem;
+        font-size:1.75rem;
+        line-height:2rem;
+
+    }
     @media (width > 850px){
-        /* margin-inline-start:1rem; */
+        padding-inline: 10rem;
+        font-size:2rem;
+        line-height:2.25rem;
+
+
     }
 
 }
