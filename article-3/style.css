@@ -355,24 +355,35 @@ mark{
 
 
 
-
+/* blockquote formatting */
 blockquote{
-    color:var(--off-white);
+    color:var(--dark-green);
+
     font-family:"InSerif";
     letter-spacing:.1ch;
     font-size:1.75rem;
-    padding: 3rem 2rem;
-    background:var(--dark-green);
+    padding: 1.5rem 2rem;
+    border-right: 5px solid var(--green);
     line-height:2.2rem;
     margin-block:5rem;
-    text-align:center;
-    margin-inline-start:0rem;
+    text-align:right;
+    margin-inline:0rem 6rem;
+
+    @media (500px <= width <= 850px){
+        margin-inline:0rem 12rem;
+
+    }
     @media (width > 850px){
-        margin-inline-start:1rem;
-        margin-inline-end:7rem;
+        margin-inline-start:2.5rem;
+        text-align:left;
+        border-right: none;
+        border-left: 5px solid var(--green);
+
+
     }
 }
 
+/* geronimo words styling */
 .slant{
   display: inline-block;
   font-weight: 300;
@@ -432,7 +443,7 @@ blockquote{
 }
 
 
-
+/* footer formatting */
 footer{
     background:var(--darkest-green);
     text-align:center;

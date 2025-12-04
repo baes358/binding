@@ -39,15 +39,7 @@ html{
     font-family:"InSans";
     
 }
-/* svg {
-        position: fixed;
-        z-index: 1; 
-        left:0;
-        margin-inline-start:0rem;
-        transform: scale(0.75);
-        height:150vh;
-        margin-block:0;
-} */
+
 
 main{
     margin-block-end:10rem;
@@ -59,47 +51,90 @@ header{
     
 }
 
+
+/* source from https://www.svgrepo.com/svg/94674/books-stack-of-three */
+svg {
+    fill:var(--darker-gray);
+    vertical-align:middle;
+    max-width:20rem;
+    min-width:auto;
+
+    @media (500px <= width <= 850px){
+        
+        margin-inline: auto;
+    }
+    @media (width > 850px){
+        
+        margin-inline: auto;
+    }
+
+} 
+g:hover{
+    fill:var(--dark-gray);
+}
+.bookstack{
+    transform-box:content-box;      
+    transform-origin: center;  
+    --scale:.2;   
+    animation: rotate 7s infinite linear;
+
+    @media (500px <= width <= 850px){
+        --scale:0.25;
+    }
+    @media (width > 850px){
+        --scale:0.3;
+    }
+}
+
+@keyframes rotate {
+	0%{ 
+        transform: rotate(0deg) scale(var(--scale)); 
+    }
+    100% { 
+        transform: rotate(360deg) scale(var(--scale)); 
+    }
+
+}
+@keyframes rotateCounter {
+	0%{ 
+        transform: rotate(0deg) scale(var(--scale)); 
+    }
+    100% { 
+        transform: rotate(-360deg) scale(var(--scale)); 
+    }
+
+}
+
 /* h1 formatting + responsiveness */
 h1{
     font-family:"InSerif";
     font-size:4rem;
     max-width:27rem;
     min-width:min-content;
-    margin-block:8rem;
+    margin-block-start: 0;
+    margin-block-end: 8rem;
     color:var(--mid-gray);
     line-height:3.5rem;
     margin-inline:auto;
-    
-}
-h1 span{
-    color:var(--darker-gray);
-    /* font-size:4rem; */
-}
-@media (500px <= width <= 850px){
-    h1{
+
+    @media (500px <= width <= 850px){
         font-size:6rem;
         width:30rem;
         line-height:5.5rem;
-        margin-block:9rem;
+        
     }
-    
-}
-@media (width > 850px) {
-	h1 {
-		font-size: 7rem;
-		line-height: 6rem;
-        width:45rem;
+    @media (width > 850px) {
+        font-size: 7rem;
+        line-height: 6rem;
+        width:60rem;
         margin-inline: auto;
-        margin-block:10rem;
-
-   
-	
-    }
-	
-    h1 span{
-        /* font-size:5rem; */
+        
     }
 }
+h1 span{
+    color:var(--darker-gray);
+}
+	
 
 
 h2{
@@ -117,15 +152,17 @@ h3{
     text-align:center;
     margin-block:6rem 4rem;;
     font-size:2.5rem;
-    margin-inline:1rem;
+    margin-inline:auto;
     color:var(--darkest-gray);
     letter-spacing:.05ch;
     font-weight:500;
     line-height:2.5rem;
+    max-width:27rem;
 
     @media (500px <= width <= 850px){
         font-size:3rem;
         line-height:3rem;
+        width:35rem;
 
     }
     @media (width > 850px){
@@ -133,6 +170,7 @@ h3{
         line-height:3.5rem;
         width:60rem;
         margin-inline:auto;
+        width:45rem;
 
     }
 
@@ -243,7 +281,7 @@ img{
 figcaption{
     text-align:center;
     margin-block:1rem 4.5rem;;
-    width:20rem;
+    max-width:20rem;
     margin-inline:auto;
     font-size:.9rem;
     line-height:1.2rem;
@@ -350,7 +388,7 @@ main p{
     
 }
 
-
+/* geronimo words */
 .slant{
   display: inline-block;
   font-weight: 300;
@@ -376,12 +414,12 @@ main p{
   color: var(--pistachio);
   -webkit-text-stroke: .75px #000;
   font-weight: 600;
-  font-size:2.2rem;
+  /* font-size:2.2rem; */
 }
 .shadow {
   text-shadow: 1.4px 1.4px 0 #8c1d98;
   font-weight: 500;
-  font-size:2.2rem;
+  /* font-size:2.2rem; */
   color:var(--aqua);
   letter-spacing:.05ch;
 }
