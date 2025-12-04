@@ -67,40 +67,30 @@ svg {
         
         margin-inline: auto;
     }
-
 } 
 g:hover{
     fill:var(--dark-gray);
+    
 }
 .bookstack{
     transform-box:content-box;      
     transform-origin: center;  
-    --scale:.2;   
-    animation: rotate 7s infinite linear;
+    --scale:.19;   
+    animation: rotate 7.6s infinite linear;
 
     @media (500px <= width <= 850px){
-        --scale:0.25;
+        --scale:0.23;
     }
     @media (width > 850px){
-        --scale:0.3;
+        --scale:0.29;
     }
 }
-
 @keyframes rotate {
 	0%{ 
         transform: rotate(0deg) scale(var(--scale)); 
     }
     100% { 
         transform: rotate(360deg) scale(var(--scale)); 
-    }
-
-}
-@keyframes rotateCounter {
-	0%{ 
-        transform: rotate(0deg) scale(var(--scale)); 
-    }
-    100% { 
-        transform: rotate(-360deg) scale(var(--scale)); 
     }
 
 }
@@ -111,8 +101,8 @@ h1{
     font-size:4rem;
     max-width:27rem;
     min-width:min-content;
-    margin-block-start: 0;
-    margin-block-end: 8rem;
+    margin-block-start: 0rem;
+    margin-block-end: 7rem;
     color:var(--mid-gray);
     line-height:3.5rem;
     margin-inline:auto;
@@ -121,6 +111,8 @@ h1{
         font-size:6rem;
         width:30rem;
         line-height:5.5rem;
+        margin-block-start: 1rem;
+        margin-block-end: 6.75rem;
         
     }
     @media (width > 850px) {
@@ -128,6 +120,8 @@ h1{
         line-height: 6rem;
         width:60rem;
         margin-inline: auto;
+        margin-block-start: 1.5rem;
+        margin-block-end: 6.5rem;
         
     }
 }
@@ -207,7 +201,7 @@ nav{
 /* navigation banners */
 
 ul li{
-    font-size:2rem;
+    font-size:1.2rem;
     font-family:"InSans";
    
     font-weight:400;
@@ -215,22 +209,24 @@ ul li{
     
 
     @media (500px <= width <= 850px){
-        font-size:2.5rem;
+        font-size:1.5rem;
     }
     @media (width > 850px){
-        font-size:3rem;
+        font-size:1.75rem;
     }
 }
 ul li:hover{
     text-transform: uppercase;
     font-family:"InSerif";
-    font-size:2rem;
+    letter-spacing:.2ch;
+    font-size:1.5rem;
+    padding:1.8rem 1rem;
 
     @media (500px <= width <= 850px){
-        font-size:2.5rem;
+        font-size:1.75rem;
     }
     @media (width > 850px){
-        font-size:3rem;
+        font-size:2rem;
     }
 }
 
@@ -488,13 +484,19 @@ footer{
     background:var(--darker-gray);
     text-align:center;
     color:var(--off-white);
-    font-size:1rem;
-    /* letter-spacing:.25ch; */
+    font-size:.75rem;
+    letter-spacing: .1ch;
     
+    @media (500px <= width <= 850px){
+        font-size:.9rem;
+    }
+    @media (width > 850px){
+        font-size:1rem;
+    }
 }
 footer p{
     padding-block: 2rem;
-    margin-inline:2rem;
+    margin-inline:1.5rem;
 
 }
 
