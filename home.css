@@ -38,6 +38,15 @@ html{
     background:var(--off-white);
     font-family:"InSans";
 }
+/* svg {
+        position: fixed;
+        z-index: 1; 
+        left:0;
+        margin-inline-start:0rem;
+        transform: scale(0.75);
+        height:150vh;
+        margin-block:0;
+} */
 
 main{
     margin-block-end:10rem;
@@ -87,15 +96,19 @@ h3{
     font-family:"InSerif";
     text-align:center;
     margin-block:6rem 4rem;;
-    font-size:2.1rem;
+    font-size:2.5rem;
     margin-inline:1rem;
-    color:var(--dark-gray);
+    color:var(--darkest-gray);
     letter-spacing:.05ch;
     font-weight:500;
+    line-height:2.5rem;
 }
-h3 span{
+#h3span{
     font-family:"InSans";
+    font-size:2.75rem;
 }
+
+
 
 
 nav{
@@ -152,6 +165,38 @@ ul li:hover{
 
 }
 
+figure{
+    justify-content: center;
+    margin: 2rem 0;  
+    
+}
+img{
+    max-width: 25rem;          
+    width: 100%;               
+    height: auto;      
+    display: block;
+    margin: 0 auto;
+    padding:1rem;
+    border:25px solid var(--dark-blue);
+}
+figcaption{
+    text-align:center;
+    margin-block:1rem 4.5rem;;
+    margin-inline:7rem;
+    font-size:.9rem;
+    line-height:1.2rem;
+    color: var(--dark-gray);
+}
+figcaption a{
+    color: var(--dark-blue);
+    font-weight:500;
+    /* font-family:"InSerif"; */
+    /* font-size:1.2rem; */
+}
+figcaption a:hover{
+    color: var(--blue);
+}
+
 main p{
     margin-inline:1.5rem;
 }
@@ -165,7 +210,7 @@ main p{
 
     font-size:1.2rem;
     line-height:1.7rem;
-    color:var(--dark-gray);
+    color:var(--darker-gray);
     font-weight:300;
     margin-block-end:1.5rem;
     text-wrap:pretty;
@@ -207,7 +252,7 @@ main p{
 
     font-size:1.2rem;
     line-height:1.5rem;
-    color:var(--darker-gray);
+    color:var(--dark-gray);
     font-weight:300;
     text-wrap:pretty;
     
