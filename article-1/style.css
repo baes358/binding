@@ -137,7 +137,7 @@ h1{
     @media (width < 415px){
         font-size:4rem;
         line-height:3.5rem;
-        max-width:20rem;
+        max-width:25rem;
         margin-inline: 0rem auto;
         margin-block-start:7rem;
     }
