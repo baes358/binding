@@ -127,9 +127,9 @@ h1{
     max-width:30rem;
     
     @media (width < 415px){
-        font-size:3rem;
-        line-height:2.7rem;
-        max-width:20rem;
+        font-size:3.5rem;
+        line-height:3rem;
+        max-width:25rem;
         margin-inline: 0rem auto;
         margin-block-start:7rem;
     }
