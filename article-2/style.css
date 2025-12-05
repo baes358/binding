@@ -134,9 +134,9 @@ h1{
         margin-block-start:7rem;
     }
     @media (500px <= width <= 850px) {
-        font-size:4.5rem;
-        line-height:4rem;
-        max-width:40rem;
+        font-size:5rem;
+        line-height:4.5rem;
+        max-width:35rem;
     }
     @media (width > 850px) {
         font-size: 5rem;
@@ -144,12 +144,7 @@ h1{
         margin-inline: auto;
         max-width:60rem;
     }
-    @media (850px <= width <= 1000px) {
-        font-size: 5rem;
-		line-height: 4.5rem;
-        margin-inline: auto;
-        max-width:60rem;
-    }
+    
 }
 
 h1 span{

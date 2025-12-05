@@ -126,8 +126,8 @@ nav a:hover{
 /* title formatting */
 h1{
     color:var(--dark-green);
-    font-size:4rem;
-    line-height:3.5rem;
+    font-size:3.5rem;
+    line-height:3rem;
     margin-block:7rem 4rem;
     margin-inline:0 auto;
     font-family: "InSerif";
@@ -135,8 +135,8 @@ h1{
     
 
     @media (width < 415px){
-        font-size:4rem;
-        line-height:3.5rem;
+        font-size:3.5rem;
+        line-height:3rem;
         max-width:25rem;
         margin-inline: 0rem auto;
         margin-block-start:7rem;
@@ -154,6 +154,7 @@ h1{
         margin-inline: auto;
         max-width:60rem;
     }
+    
 }
 
 h1 span{
