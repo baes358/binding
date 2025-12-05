@@ -124,45 +124,40 @@ h1{
     margin-block:7rem 4rem;
     margin-inline:0 auto;
     font-family: "InSerif";
-    width:20rem;
+    max-width:30rem;
     
     @media (width < 415px){
         font-size:3rem;
         line-height:2.7rem;
-        max-width:15rem;
+        max-width:20rem;
         margin-inline: 0rem auto;
         margin-block-start:7rem;
     }
     @media (500px <= width <= 850px) {
         font-size:5rem;
         line-height:4.5rem;
-        width:30rem;
+        max-width:45rem;
     }
     @media (width > 850px) {
         font-size: 5.5rem;
 		line-height: 5rem;
         margin-inline: auto;
-        width:50rem;
+        max-width:50rem;
     }
 }
 
 h1 span{
     color:var(--darkest-green);
-    font-size:3.5rem;
-    line-height:3rem;
+    
     margin-block:8rem;
     width:18rem;
 
 
     @media (500px <= width <= 850px) {
-        font-size:5rem;
-        line-height:4.5rem;
         width:30rem;
         
     }
     @media (width > 850px) {
-        font-size: 5.5rem;
-		line-height: 5rem;
         margin-inline: auto;
         width:50rem;
     }
@@ -264,10 +259,10 @@ h1 span{
 .context{
     color:var(--off-white);
     font-family:"InSerif";
-    letter-spacing:.1ch;
     font-size:1.5rem;
     padding: 3rem 2rem;
     background:var(--dark-green);
+    letter-spacing:.1ch;
     line-height:1.75rem;
     margin-block:3rem;
     text-align:center;
@@ -414,11 +409,11 @@ blockquote{
 
     font-family:"InSerif";
     letter-spacing:.1ch;
-    font-size:1.75rem;
+    font-size:1.5rem;
+    line-height:1.75rem;
     padding: 1.5rem 2rem;
     border-right: 5px solid var(--green);
-    line-height:2.2rem;
-    margin-block:5rem;
+    margin-block:0rem;
     text-align:right;
     margin-inline:0rem 6rem;
 
