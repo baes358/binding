@@ -195,6 +195,9 @@ h1 span{
     }
 
 }
+#og-author a:hover{
+    color: var(--green);
+}
 
 
 /* color line formatting */

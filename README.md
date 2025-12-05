@@ -1,5 +1,5 @@
 # PROJECT 3: BINDING
-Typography &amp; Interaction I, Fall 2025
+**Typography &amp; Interaction I, Fall 2025**
 
 # Rethinking Graphic Design History - A Digital Mini-Book
 
@@ -15,9 +15,9 @@ This project consists of three texts that challenge traditional approaches to gr
 
 ## Design Inspiration
 
-The visual design is inspired by **Geronimo Stilton** children's books, which use playful typography and engaging visual hierarchies to make reading more dynamic and entertaining.
+The visual design is inspired by *[Geronimo Stilton](https://embed.cdn.pais.scholastic.com/v1/channels/tso/products/identifiers/isbn/9780545307710/alternate/0/renditions/500)* children's books, which use playful typography and engaging visual hierarchies to make reading more dynamic and entertaining.
 
-## Assets
+## Concept
 
 ### Typography
 - **Instrument Sans** (variable font): Primary body text
@@ -25,31 +25,31 @@ The visual design is inspired by **Geronimo Stilton** children's books, which us
 - Font faces loaded via `@font-face` in CSS files
 
 ### Responsive Design
-- Mobile-first approach with main breakpoints at 500px and 850px
-- Fluid typography scaling across devices
-- Adaptive + experimental grid layouts for optimal reading experience (I saw a lot of mobile articles laid out in single-column, so I wanted to try switching it to multi-column layouts. And for desktop dimensions, I wanted to introduce single-column layouts rather than multi-column ones, essentially reversing what I usually expect from online articles and their responsive forms.)
+- Mobile-first approach with main breakpoints at 500px and 850px, few at 415px
+- Responsive typography scaling across devices, checking for legibility
+- Adaptive + experimental grid layouts for optimal reading experience (I saw a good amount of mobile articles laid out in single-column, so I wanted to try switching it to multi-column layouts. And for desktop dimensions, I wanted to introduce single-column layouts rather than various multi-column ones, essentially reversing what I typically expect from today's online articles and their responsive forms.)
 
 
 ### Visual Elements
 
 #### Color System
 Three distinct cool color palettes for each article:
-- **Article 1** (Style Cycles): Green palette (`#c6e3c7`, `#87BBA1`, `#47928b`, `#1c6364`, `#162E30`)
-- **Article 2** (People's Design): Teal palette (`#D4F6F5`, `#87AFBB`, `#3A7485`, `#0C4655`, `#132228`)
-- **Article 3** (De-heroizing): Blue palette (`#D4E9F6`, `#879ABB`, `#3A4F85`, `#012B62`, `#161328`)
+- **Style Cycles**: Green palette (`#c6e3c7`, `#87BBA1`, `#47928b`, `#1c6364`, `#162E30`)
+- **People's Design**: Teal palette (`#D4F6F5`, `#87AFBB`, `#3A7485`, `#0C4655`, `#132228`)
+- **De-heroizing**: Blue palette (`#D4E9F6`, `#879ABB`, `#3A4F85`, `#012B62`, `#161328`)
 
 
 #### Decorative Patterns
 CSS-generated geometric patterns for visual interest:
 - **Circular CSS background patterns**: [CSS Pattern Generator](https://css-pattern.com/)
-- Radial text gradients
+
 
 
 
 #### SVG Animation
 
 - **Rotating book stack SVG on homepage**: [SVGRepo - Books Stack Icon](https://www.svgrepo.com/svg/94674/books-stack-of-three)
-- Infinite rotating animation with responsive scaling
+- Infinite **rotating animation** with responsive scaling - tutorial from [SVG Tutorial](https://svg-tutorial.com/svg/css-animation)
 
 ### Interactive Typography
 
@@ -59,15 +59,15 @@ Inspired by Geronimo Stilton's expressive text treatments:
 - **`.stroke`**: Text with thin stroke outline
 - **`.shadow`**: Drop shadow effect
 - **`.space`**: Letter-spaced italic text
-- **`.shimmer`**: Animated gradient text effect
+- **`.shimmer`**: Animated gradient text effect - inspiration from [Julien Thibeaut](https://ibelick.com/blog/create-animated-text-gradient-with-css)
 - **`.geronimo`**: Orange serif text format - dedicated to Geronimo Stilton
 
 ### Navigation
 - Home page navigation banners with color-coded sections
 - Top navigation bar with theme titles for each respective article
 - Active state indicators
-- Smooth hover states
-- Simpler footer navigation bar for easy navigation to top of article or home page.
+- Clean hover states
+- Simpler footer navigation bar for easy navigation to the top of the article or the home page
 
 ### Layout Features
 - Sticky numbered/lettered labels for paragraph navigation
@@ -76,48 +76,16 @@ Inspired by Geronimo Stilton's expressive text treatments:
 - Pull quotes with custom styling + alignment changes based on device dimensions
 - Grid-based layouts, with multi-column layout on smaller screens and single-column layout on larger screens
 
-## File Structure
 
-```
-binding/
-├── index.html                  # Homepage/cover
-├── home.css                    # Homepage styles
-├── reset.css                   # CSS reset
-├── articles-reference folder   # Folder with second and third articles for reference
-├── directions folder           # Folder with drafts of design directions
-├── home-fonts folder           # Folder holding both fonts
-├── img folder                  # Folder holding img used in home page
-│
-├── article-1/
-│   ├── fonts folder            # Folder holding both fonts
-│   ├── index.html              # "Style Cycles" article
-│   ├── style.css               # Article 1 styles
-│   └── reset.css               # CSS reset
-│
-├── article-2/
-│   ├── fonts folder            # Folder holding both fonts
-│   ├── index.html              # "People's Design" article
-│   ├── style.css               # Article 2 styles
-│   └── reset.css               # CSS reset
-│
-└── article-3/
-    ├── fonts folder            # Folder holding both fonts
-    ├── index.html              # "De-heroizing" article
-    ├── style.css               # Article 3 styles
-    └── reset.css               # CSS reset
 
-```
 ## DOM Elements
 ### Structural Elements
 - `<header>`
     - Contains site hero and article titles
     - Houses SVG graphic on home page and primary headings, like author and published date
-    - Establishes visual hierarchy
 
 - `<main>`
-    - Primary content container
     - Contains navigation, articles, and figures
-    - Single '<main>' per page
 
 - `<article>`
     - Semantic wrapper for essay content
@@ -153,10 +121,8 @@ binding/
 
 ### Links
 - `<a>`
-    - Navigation between pages
+    - Navigation between pages and file directory
     - External attribution links in `<figcaption>`
-    - Wrapped around `<li>` elements in navigation
-
 ### External Media
 
 - `<svg>`: Inline animated book stack icon for home page decoration
@@ -206,6 +172,6 @@ binding/
 ## Credits
 
 ### Original Essay Authors:
-- Kristen Coogan
-- Aggie Toppins
-
+- Kristen Coogan: ["Knowing Your Design History is Crucial to Aesthetic Innovation"](https://eyeondesign.aiga.org/knowing-your-design-history-is-crucial-to-aesthetic-innovation/)
+- Aggie Toppins: ["We Need Graphic Design Histories That Look Beyond the Profession"](https://eyeondesign.aiga.org/we-need-graphic-design-histories-that-look-beyond-the-profession/)
+- Aggie Toppins: ["Can We Teach Graphic Design History Without the Cult of Hero Worship?"](https://eyeondesign.aiga.org/can-we-teach-graphic-design-history-without-the-cult-of-hero-worship/)

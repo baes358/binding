@@ -139,8 +139,8 @@ h1{
         max-width:35rem;
     }
     @media (width > 850px) {
-        font-size: 5rem;
-		line-height: 4.5rem;
+        font-size: 5.5rem;
+		line-height: 5rem;
         margin-inline: auto;
         max-width:60rem;
     }
@@ -195,6 +195,9 @@ h1 span{
 
     }
 
+}
+#og-author a:hover{
+    color: var(--green);
 }
 
 
