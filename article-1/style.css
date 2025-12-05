@@ -127,11 +127,11 @@ nav a:hover{
 h1{
     color:var(--dark-green);
     font-size:4rem;
-    line-height:3.3rem;
+    line-height:3.5rem;
     margin-block:7rem 4rem;
     margin-inline:0 auto;
     font-family: "InSerif";
-    max-width:25rem;
+    max-width:30rem;
     
 
     @media (width < 415px){

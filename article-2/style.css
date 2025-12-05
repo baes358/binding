@@ -380,10 +380,13 @@ blockquote{
     border-right: 5px solid var(--green);
     margin-block:0rem;
     text-align:right;
-    margin-inline:0rem 6rem;
+    margin-inline:0rem 5rem;
 
+    @media (width < 415px){
+        margin-inline:0rem 7rem;
+    }
     @media (500px <= width <= 850px){
-        margin-inline:0rem 12rem;
+        margin-inline:0rem 10rem;
 
     }
     @media (width > 850px){
