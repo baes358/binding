@@ -298,68 +298,109 @@ mark {
 
 /* ─── GERONIMO TEXT ─── */
 .slant {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 1.1em;
-    color: var(--accent);
-    transform: rotate(-1.5deg);
-    transition: transform 0.3s;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--ink);
+    border-bottom: 1.5px solid var(--aqua);
+    padding-bottom: 0.05em;
+    transition: color 0.3s, border-color 0.3s;
 }
 .slant:hover { 
-    transform: rotate(1.5deg) scale(1.05); 
+    color: var(--aqua);
 }
+
 .slant2 {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 1.1em;
-    color: var(--accent);
-    transform: rotate(1.25deg);
-    transition: transform 0.3s;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--ink);
+    border-bottom: 1.5px solid var(--pistachio);
+    padding-bottom: 0.05em;
+    transition: color 0.3s;
 }
 .slant2:hover { 
-    transform: rotate(-1.25deg) scale(1.05); 
+    color: var(--pistachio);
 }
+
 .geronimo {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 1.05em;
+    font-family: 'Mazius', serif;
+    font-weight: 400;
+    font-size: 1.1em;
     color: var(--sand);
-    transition: transform 0.3s;
+    letter-spacing: 0.02em;
+    transition: letter-spacing 0.3s;
 }
 .geronimo:hover { 
-    transform: scale(1.06) rotate(-1deg); 
+    letter-spacing: 0.08em;
 }
+
 .stroke {
-    color: var(--pistachio);
-    -webkit-text-stroke: 0.5px var(--ink);
-    font-weight: 600;
-    font-size: 1.05em;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.12em;
+    color: var(--body);
+    background: linear-gradient(to top, var(--highlight) 40%, transparent 40%);
+    padding: 0 0.15em;
+    transition: background 0.3s;
 }
+.stroke:hover {
+    background: linear-gradient(to top, #d4cfc5 40%, transparent 40%);
+}
+
 .shadow {
-    text-shadow: 1px 1px 0 #7a2d6a;
+    font-style: italic;
     font-weight: 500;
-    font-size: 1.05em;
     color: var(--aqua);
-    letter-spacing: 0.03em;
+    transition: color 0.3s;
 }
+.shadow:hover {
+    color: var(--periwinkle);
+}
+
 .space {
     letter-spacing: 0.08em;
+    font-style: italic;
     font-weight: 500;
     color: var(--periwinkle);
-    font-style: italic;
+    border-bottom: 1px dashed var(--periwinkle);
+    padding-bottom: 0.05em;
+    transition: color 0.3s, border-color 0.3s;
 }
+.space:hover {
+    color: var(--ink);
+    border-color: var(--ink);
+}
+
 .shimmer {
     font-weight: 700;
-    background: linear-gradient(90deg, #7EA060, #25a356, #3D8A87, #6068A8, #8e66c4, #7EA060);
-    background-size: 200%;
+    color: var(--aqua);
+    position: relative;
+    display: inline;
+    transition: color 0.3s;
+    cursor: default;
+}
+/* .shimmer::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 2.5px;
+    background: linear-gradient(90deg, var(--pistachio), var(--aqua), var(--periwinkle), var(--pistachio));
+    background-size: 300%;
+    animation: shimmer-line 3s linear infinite;
+} */
+.shimmer:hover {
+    background: linear-gradient(90deg, var(--pistachio), var(--aqua), var(--periwinkle), var(--pistachio));
+    background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: shimmer 6s linear infinite;
+    animation: shimmer-line 3s linear infinite;
 }
-@keyframes shimmer {
-    0% { background-position: -200%; }
-    100% { background-position: 200%; }
+@keyframes shimmer-line {
+    0% { background-position: 0%; }
+    100% { background-position: 300%; }
 }
 
 /* ─── FOOTER ─── */
