@@ -249,7 +249,7 @@ body::before {
     flex-shrink: 0;
 }
 .spine:hover {
-    width: clamp(7.5rem, 15vw, 11rem);
+    width: clamp(12rem, 22vw, 18rem);
 }
 .spine:not(:hover) {
     filter: brightness(0.97);
@@ -265,6 +265,10 @@ body::before {
     border-right: 1px solid #00000015;
     position: relative;
     overflow: hidden;
+    transition: padding 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.spine:hover .spine-inner {
+    padding: 1.5rem 1rem;
 }
 /* Inset border effect */
 .spine-inner::before {
@@ -330,10 +334,14 @@ body::before {
     letter-spacing: 0.02em;
     max-height: 100%;
     overflow: hidden;
-    transition: letter-spacing 0.3s;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .spine:hover .spine-title {
-    letter-spacing: 0.04em;
+    writing-mode: horizontal-tb;
+    text-orientation: initial;
+    font-size: clamp(0.75rem, 1.2vw, 0.95rem);
+    line-height: 1.35;
+    letter-spacing: 0.01em;
 }
 
 /* ─── SPINE BOTTOM ─── */
@@ -355,6 +363,7 @@ body::before {
 }
 .spine:hover .spine-author {
     display: block;
+    writing-mode: horizontal-tb;
 }
 .spine-tag {
     font-family: 'InSans', sans-serif;
@@ -363,6 +372,11 @@ body::before {
     letter-spacing: 0.15em;
     color: #ffffff66;
     writing-mode: vertical-rl;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.spine:hover .spine-tag {
+    writing-mode: horizontal-tb;
+    font-size: 0.5rem;
 }
 
 /* ─── SPINE HOVER GLOW ─── */
@@ -387,18 +401,27 @@ body::before {
     opacity: 1;
 }
 
-/* ─── SHELF SHADOW ─── */
-.shelf::after {
-    content: '';
-    position: absolute;
-    bottom: -0.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 0.5rem;
-    background: radial-gradient(ellipse, #00000015, transparent);
-    pointer-events: none;
+
+
+@media (max-width: 48rem) {
+    .shelf {
+        height: clamp(24rem, 55vh, 32rem);
+    }
+    .spine {
+        width: clamp(5rem, 20vw, 7rem);
+    }
+    .spine:hover {
+        width: clamp(10rem, 50vw, 14rem);
+    }
+    .spine-title {
+        font-size: clamp(0.6rem, 2.5vw, 0.75rem);
+    }
+    .bookshelf {
+        padding: 3rem 1rem 5rem;
+    }
 }
+
+
 
 @media (max-width: 48rem) {
     .shelf {
