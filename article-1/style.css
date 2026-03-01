@@ -266,6 +266,8 @@ html {
     font-weight: 500;
 }
 
+
+
 /* ─── MARGIN NOTES ─── */
 .margin-note {
     grid-column: 3;
@@ -290,10 +292,60 @@ html {
 
 /* ─── HIGHLIGHTS & MARKS ─── */
 mark {
-    background: var(--highlight);
     color: var(--ink);
     padding: 0.05em 0.2em;
     border-radius: 1px;
+    background: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 20%,
+        #f0e8d4 20%,
+        #e8d9b8 50%,
+        #f0e8d4 80%,
+        transparent 80%,
+        transparent 100%
+    );
+    background-size: 300% 100%;
+    background-position: 100% 0;
+    animation: mark-sweep 4s ease-in-out infinite alternate;
+}
+
+/* stagger each mark so they don't all pulse in unison */
+mark:nth-of-type(2)  { 
+    animation-delay: -0.8s; 
+}
+mark:nth-of-type(3)  { 
+    animation-delay: -1.6s; 
+}
+mark:nth-of-type(4)  { 
+    animation-delay: -2.4s; 
+}
+mark:nth-of-type(5)  { 
+    animation-delay: -3.2s; 
+}
+mark:nth-of-type(6)  { 
+    animation-delay: -0.4s; 
+}
+mark:nth-of-type(7)  { 
+    animation-delay: -1.2s; 
+}
+mark:nth-of-type(8)  { 
+    animation-delay: -2.0s; 
+}
+mark:nth-of-type(9)  { 
+    animation-delay: -2.8s; 
+}
+mark:nth-of-type(10) { 
+    animation-delay: -3.6s; 
+}
+
+@keyframes mark-sweep {
+    0%   { 
+        background-position: 100% 0; 
+    }
+    100% { 
+        background-position:   0% 0; 
+    }
 }
 
 /* ─── GERONIMO TEXT ─── */

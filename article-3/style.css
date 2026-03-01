@@ -193,7 +193,7 @@ html {
 .chapter-banner h1 em {
     font-style: italic;
     font-weight: 400;
-    color: #d4e8dc;
+    color: #bccee7;
 }
 .chapter-banner .ch-meta {
     margin-top: 1.5rem;
@@ -201,7 +201,7 @@ html {
     color: #ffffffbb;
 }
 .chapter-banner .ch-meta a {
-    color: #d4e8dc;
+    color: #bccee7;
     text-decoration: none;
     border-bottom: 1px solid #ffffff44;
     transition: border-color 0.3s;
@@ -213,7 +213,7 @@ html {
 /* ─── EPIGRAPH ─── */
 .epigraph {
     grid-column: 2 / 3;
-    border-left: 2px solid #2E7D8A;
+    border-left: 2px solid #2e428a;
     padding: 1.25rem 0 1.25rem 1.5rem;
     margin: 2rem 0 3rem;
     font-style: italic;
@@ -306,11 +306,62 @@ html {
 
 /* ─── HIGHLIGHTS & MARKS ─── */
 mark {
-    background: var(--highlight);
     color: var(--ink);
     padding: 0.05em 0.2em;
     border-radius: 1px;
+    background: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 20%,
+        #f0e8d4 20%,
+        #e8d9b8 50%,
+        #f0e8d4 80%,
+        transparent 80%,
+        transparent 100%
+    );
+    background-size: 300% 100%;
+    background-position: 100% 0;
+    animation: mark-sweep 4s ease-in-out infinite alternate;
 }
+
+/* stagger each mark so they don't all pulse in unison */
+mark:nth-of-type(2)  { 
+    animation-delay: -0.8s; 
+}
+mark:nth-of-type(3)  { 
+    animation-delay: -1.6s; 
+}
+mark:nth-of-type(4)  { 
+    animation-delay: -2.4s; 
+}
+mark:nth-of-type(5)  { 
+    animation-delay: -3.2s; 
+}
+mark:nth-of-type(6)  { 
+    animation-delay: -0.4s; 
+}
+mark:nth-of-type(7)  { 
+    animation-delay: -1.2s; 
+}
+mark:nth-of-type(8)  { 
+    animation-delay: -2.0s; 
+}
+mark:nth-of-type(9)  { 
+    animation-delay: -2.8s; 
+}
+mark:nth-of-type(10) { 
+    animation-delay: -3.6s; 
+}
+
+@keyframes mark-sweep {
+    0%   { 
+        background-position: 100% 0; 
+    }
+    100% { 
+        background-position:   0% 0; 
+    }
+}
+
 
 /* ─── GERONIMO TEXT ─── */
 .slant {
