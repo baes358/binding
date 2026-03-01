@@ -197,7 +197,7 @@ html {
 /* ─── EPIGRAPH ─── */
 .epigraph {
     grid-column: 2 / 3;
-    border-left: 2px solid #2E7D8A;
+    border-left: 2px solid #2e718a;
     padding: 1.25rem 0 1.25rem 1.5rem;
     margin: 2rem 0 3rem;
     font-style: italic;
@@ -209,7 +209,7 @@ html {
     font-style: normal;
     font-weight: 600;
     text-decoration: underline;
-    text-decoration-color: #2E7D8A;
+    text-decoration-color: #2e8a64;
     text-underline-offset: 0.2rem;
     text-decoration-thickness: 1px;
 }
