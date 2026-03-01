@@ -321,11 +321,11 @@ body::before {
     justify-content: center;
     overflow: hidden;
     width: 100%;
-    padding: 0.75rem 0;
+    padding: 0.85rem 0;
 }
 .spine-title {
     font-family: 'Mazius', serif;
-    font-size: clamp(0.7rem, 1.1vw, 0.85rem);
+    font-size: 1rem;
     line-height: 1.3;
     color: #ffffffee;
     writing-mode: vertical-rl;
@@ -339,7 +339,7 @@ body::before {
 .spine:hover .spine-title {
     writing-mode: horizontal-tb;
     text-orientation: initial;
-    font-size: clamp(0.75rem, 1.2vw, 0.95rem);
+    font-size: 1rem;
     line-height: 1.35;
     letter-spacing: 0.01em;
 }
